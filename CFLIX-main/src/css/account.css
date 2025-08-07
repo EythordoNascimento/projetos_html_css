@@ -1,0 +1,81 @@
+/* General Styles */
+
+  
+  .container-account {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:link{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  div > a:hover {
+    color: white;
+  }
+  
+  /* Account Information */
+  .account-info {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .container-account > h1 {
+    text-align: center;
+  }
+  
+  /* Security */
+  .security {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Profiles */
+  .profiles ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profiles li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profiles li a {
+    margin-left: 10px;
+  }
+  
+  /* Billing */
+  .billing {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container-account {
+      padding: 10px;
+      margin-top: 9rem;
+    }
+  
+    .account-info {
+      width: fit-content;
+    }
+  }

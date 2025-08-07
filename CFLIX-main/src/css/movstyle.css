@@ -1,0 +1,474 @@
+/* movstyle.css */
+html, body {
+    background-color: #141414;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 10px;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+.nav_black {
+    background-color: black;
+    padding: 10px;
+}
+.nav_logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+.nav_avatar {
+    width: 60px;
+    object-fit: contain;
+}
+
+iframe {
+    width: flex;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: flex;
+    height: flex;
+}
+
+iframe {
+    width: 50vw;
+    height: calc(60vh - 80px);
+    padding: 10px;
+    margin-top: auto;
+
+}
+.movie-details-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.backdrop-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.movie-poster {
+    flex: 0 0 300px;
+    margin-right: 40px;
+}
+
+.movie-poster img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.movie-info h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating,
+.genre,
+.runtime,
+.year {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.synopsis {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.watch-btn {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+    background-color: #141414;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.HD:active,
+.facebook-like:active,
+a.href:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    /* This will remove the tap highlight on mobile devices */
+}
+
+.search-container {
+    margin: auto;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff3737;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #ff0000;
+}
+.banner_button {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(3, 3, 3, 0.463);
+}
+.banner_button:hover {
+    color: rgb(255, 255, 255);
+    background-color: whitesmoke;
+    transition: all 0.2s;
+    transform: scale(1.04);
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+
+.row {
+    margin-left: 20px;
+}
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    width: auto;
+    margin-right: 10px;
+    transition: transform 450ms;
+    display: flex;
+    padding: 5px;
+    scroll-snap-align: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.movie-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie-item img.large {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.movie-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.small {
+    max-width: 200px;
+    max-height: 120px;
+    transition: transform 450ms;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.large {
+    max-width: 175px;
+    max-height: 245px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.large:hover,
+.small:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .nav_logo {
+        width: 80px;
+    }
+
+    .nav_avatar {
+        width: 40px;
+    }
+
+    .movie-poster {
+        flex: 0 0 200px;
+    }
+
+    .movie-info h1 {
+        font-size: 36px;
+    }
+
+    .rating,
+    .genre,
+    .runtime,
+    .year {
+        font-size: 12px;
+    }
+
+    .banner_button {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Additional Media Queries for even smaller screens if needed */
+@media only screen and (max-width: 480px) {
+    /* Adjustments for very small screens */
+    .nav_logo {
+        width: 60px;
+    }
+
+    .nav_avatar {
+        width: 30px;
+    }
+
+    .movie-poster {
+        flex: 0 0 150px;
+    }
+
+    .movie-info h1 {
+        font-size: 24px;
+    }
+
+    .rating,
+    .genre,
+    .runtime,
+    .year {
+        font-size: 10px;
+    }
+
+    .banner_button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: 0.3rem;
+    }
+}
+
+
+/* account  details */
+.user-profile {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-profile .fas {
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .user-profile:hover .fas {
+    transform: scale(1.2);
+  }
+  
+  .profile-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .profile-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-options li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .profile-options li:hover {
+    background-color: #444;
+  }
+  
+  .profile-options li .fas {
+    margin-right: 12px;
+    color: #fff;
+  }
+  
+  .profile-options li span {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .profile-options hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 8px 0;
+  }
+  
+  .profile-options .sign-out {
+    padding: 8px 16px;
+  }
+  
+  .user-profile:hover .profile-options {
+    display: block;
+  }
+  
+  
+  .profile-options hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 8px 0;
+  }
+  
+  .profile-options .sign-out {
+    padding: 8px 16px;
+    margin: 0px 34px;
+  }
+.profile-options li a{
+    color: #ffffff;
+}
+a:link{
+    text-decoration: none;
+    color: #fff;
+}  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/account.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <a href="index.html">
+            <img src="netflix-images/prime-logo.png" alt="" class="nav_logo">
+        </a>
+        
+        <a href="#">
+            <div class="user-profile">
+                <img src="netflix-images/netflix-avatar.png" alt="" class="nav_avatar">
+                <div class="profile-options">
+                    <ul>
+                        <li><i class="fas fa-exchange-alt"></i><a href="./transfer.html"> Transferir Perfis</a></li>
+                        <li><i class="fas fa-user"></i><a href="./account.html"> Conta </a></li>
+                        <hr>
+                        <li class="sign-out">Sair</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="container-account">
+        <h1>Conta</h1>
+        <div class="account-info">
+            <h2>Informações da Conta</h2>
+            <p><strong>Nome:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Assinatura:</strong> Premium</p>
+            <a href="#">Alterar Assinatura</a>
+        </div>
+
+        <div class="security">
+            <h2>Segurança</h2>
+            <p><strong>Senha:</strong> ********</p>
+            <a href="#">Alterar Senha</a>
+            <p><strong>PIN de Segurança:</strong> Não definido</p>
+            <a href="#">Definir PIN de Segurança</a>
+        </div>
+
+        <div class="billing">
+            <h2>Faturamento</h2>
+            <p><strong>Método de Pagamento:</strong> Visa terminando em 1234</p>
+            <a href="#">Atualizar Informações de Pagamento</a>
+            <p><strong>Data de Cobrança:</strong> Dia 15 de cada mês</p>
+        </div>
+    </div>
+
+    <script src=".src/js/account.js"></script>
+</body>
+</html>

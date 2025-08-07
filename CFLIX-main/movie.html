@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="icon" href="netflix-images/icon.png" type="image/png">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="./src/css/movstyle.css">
+</head>
+
+<body>
+    
+    <div class="nav" id="nav">
+        <a href="index.html">
+            <img src="netflix-images/prime-logo.png" alt="" class="nav_logo"></a>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="banner_button" placeholder="Type anything...">
+                <button class="banner_button" onclick="searchMovies()">Search</button>
+            </div>
+            <a href="#">
+            
+            <div class="user-profile">
+                <img src="netflix-images/netflix-avatar.png" alt="" class="nav_avatar"></a>
+                <div class="profile-options">
+                  <ul>
+                    <li><i class="fas fa-exchange-alt"></i><a href="./transfer.html"> Transfer Profiles</a></li>
+                    <li><i class="fas  fa-user"></i><a href="./account.html"> Account </a></li>
+                    <hr>
+                    <li class="sign-out">
+                        <a href="./landing.html"> Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+     </div>
+       
+
+	 
+	
+    <div class="movie-details-container">
+        <div class="backdrop-image"></div>
+        <div class="content-container">
+            <div class="movie-poster">
+                <img src="netflix-images/icon2.png" alt="Movie Poster" id="moviePoster">
+            </div>
+            <div class="movie-info">
+                <h1 id="movieTitle"></h1>
+                <div class="details">
+                    <div id="movieDetails"></div>
+                    <div class="info-row">
+                        <div class="rating">
+                            <span id="rating"></span>
+                        </div>
+                        <div class="genre" id="genre"></div>
+                        <div class="runtime" id="runtime"></div>
+                        <div class="year" id="year"></div>
+                    </div>
+                </div>
+                <div class="synopsis" id="synopsis"></div>
+                <div class="actions">
+                   
+			    <button id="openPopupBtn" class="watch-btn">-  Assista Agora 
+                </button>
+
+    <div id="videoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row_posters" id="searchResults"></div>
+    </div>
+
+
+<script src="./src/js/movie.js"></script>
+
+</body>
+
+</html>

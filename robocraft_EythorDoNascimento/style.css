@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+a {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #8b8787;
+    color: #fff;
+}
+
+
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    background: #f7f7f7;
+    padding: 20px;
+    
+  }
+  
+  .texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+  }
+  .texto {
+    background-color: #fff;
+    text-align: right;
+    padding-top: 40px;
+    
+  }
+  
+  .texto p {
+    font-size: 20px; 
+    color: #6c6c6c;
+    margin-bottom: 15px;
+    
+  }
+  
+  .btn {
+    background: #ee2211;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .imagem img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .vantagens {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 85px;
+    align-items: start;
+  }
+  
+  .vantagens h2 {
+    font-size: 64px;
+    color: #c6c6c6;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .vantagens h2 {
+    font-size: 64px;
+    color: #c6c6c6;
+    margin: 0;
+    line-height: 1.2;
+    text-align: right;
+   
+  }
+  
+  .grid-vantagens {
+    background: #fff;
+    padding: 90px 60px;
+    width: 100%;              
+    max-width: 1000px;        
+    border-radius: 8px;
+    display: grid;
+    gap: 30px;
+    margin-top: -100px;
+    box-sizing: border-box;   
+  }
+  
+  .item {
+    display: grid;
+    grid-template-columns: 50px 1fr; 
+    gap: 15px;
+    align-items: start;
+    position: relative;
+    top: -10px;
+
+  }
+  
+  .icone {
+    width: 35px;
+    height: 35px;
+    align-self: start;
+    justify-self: center;
+  }
+  
+  .conteudo h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .conteudo p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    color: #6c6c6c;
+  }
+
+  .rodape {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  
+
+
+  
+  
+

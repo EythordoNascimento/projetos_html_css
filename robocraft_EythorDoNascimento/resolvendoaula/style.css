@@ -1,0 +1,107 @@
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(87, 88, 85);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 64px;
+    text-align: right;
+    color: #c6c6c6;
+    padding: 25px;
+    text-align: center;
+}
+#logo{
+
+    margin: 0 auto;
+    width: 250px;
+}
+
+.menu {
+   display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+   
+  
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
+
+.menu a {
+
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.principal {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.descrição {
+    background-color: #fff;
+    display: grid;
+    align-content: center;
+    gap: 15px;
+    justify-items: right;
+    padding: 25px;
+}
+
+.descrição p {
+    text-align: right;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    background: #ee2211;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #550903;
+}
+
+.vantagens {
+    background-color: white;
+    padding: 30px;
+}
+
+.vantagens-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
+}
+
+.vantagens-item p {
+    grid-column: 2;
+}
+
+

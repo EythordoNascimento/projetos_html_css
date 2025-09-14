@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transfer Your Profile</title>
+    <title>Transferir Seu Perfil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./src/css/transfer.css">
     <link rel="stylesheet" href="./src/css/styles.css">
-    
-    
 </head>
 <body>
     <div class="nav" id="nav">
         <a href="index.html">
-            <img src="netflix-images/prime-logo.png" alt="" class="nav_logo"></a>
+            <img src="netflix-images/prime-logo.png" alt="" class="nav_logo">
+        </a>
             
         <a href="#">
-            
           <div class="user-profile">
-            <img src="netflix-images/netflix-avatar.png" alt="" class="nav_avatar"></a>
+            <img src="netflix-images/netflix-avatar.png" alt="" class="nav_avatar">
             <div class="profile-options">
               <ul>
-                <li><i class="fas fa-exchange-alt"></i><a href="./transfer.html"> Transfer Profiles</a></li>
-                <li><i class="fas  fa-user"></i><a href="./account.html"> Account </a></li>
+                <li><i class="fas fa-exchange-alt"></i><a href="./transfer.html"> Transferir Perfis</a></li>
+                <li><i class="fas  fa-user"></i><a href="./account.html"> Conta </a></li>
                 <hr>
                 <li class="sign-out">
-                    <a href="./landing.html"> Sign Out</a></li>
+                    <a href="./landing.html"> Sair</a></li>
               </ul>
             </div>
           </div>
-            
+        </a>
     </div>
+
     <br>
     <br>
     <br>
     <br>
     <br>
+
     <div class="container">
-     
-     <main>
-        <div class="transfer-container">
-          <h1>Transfer Your Profile</h1>
-          <p>Enter your current email ID and the new email ID to transfer your profile.</p>
-          <form>
-            <div class="form-group">
-              <label for="current-email">Current email ID:</label>
-              <input type="email" id="current-email" name="current-email" required>
+        <main>
+            <div class="transfer-container">
+                <h1>Transferir Seu Perfil</h1>
+                <p>Informe seu e-mail atual e o novo e-mail para transferir seu perfil.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="current-email">E-mail atual:</label>
+                        <input type="email" id="current-email" name="current-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-email">Novo e-mail:</label>
+                        <input type="email" id="new-email" name="new-email" required>
+                    </div>
+                    <button type="submit" class="transfer-btn">Transferir Perfil</button>
+                </form>
             </div>
-            <div class="form-group">
-              <label for="new-email">New email ID:</label>
-              <input type="email" id="new-email" name="new-email" required>
-            </div>
-            <button type="submit" class="transfer-btn">Transfer Profile</button>
-          </form>
-        </div>
-      </main>
+        </main>
+    </div>
 </body>
 </html>

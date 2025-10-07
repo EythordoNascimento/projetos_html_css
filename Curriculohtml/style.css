@@ -1,0 +1,146 @@
+
+  
+ /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho com nome à esquerda e nav à direita */
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+
+  .perfil {
+    display: flex;
+    align-items: center;
+    padding: 50px 40px;
+    background-color: #ecf0f1;
+    gap: 40px;
+  }
+  
+  .foto img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .info h2 {
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    
+  }
+  
+  .info p {
+    font-size: 32px;
+    color: #555;
+  }
+  
+  /* Seções */
+  section {
+    padding: 40px 20px;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+  }
+  
+  /* Layout em duas colunas */
+  .duas-colunas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+  
+  .box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .box p {
+    font-size: 15px;
+    color: #555;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 40px;
+  }
+  
+  .rodape-container {
+    display: flex;
+    justify-content: center; 
+    gap: 100px; 
+    flex-wrap: wrap;
+  }
+  
+  .lado-esquerdo,
+  .lado-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  .lado-esquerdo p,
+  .lado-direito p {
+    font-size: 14px;
+  }

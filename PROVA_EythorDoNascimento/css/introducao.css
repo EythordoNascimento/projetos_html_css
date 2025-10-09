@@ -1,0 +1,45 @@
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro h1 {
+  position: relative;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  z-index: 1;
+}
+
+.intro h1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -130px;
+  width: 320px;
+  height: 110px;
+  background: url("../img/detalhe_A.svg") no-repeat center;
+  background-size: contain;
+  transform: rotate(-12deg);
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.location {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #555;
+}

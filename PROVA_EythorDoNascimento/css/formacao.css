@@ -1,0 +1,79 @@
+.formacao {
+  background-color: #141414;
+  color: #fff;
+  position: relative;
+  padding-top: 80px;
+}
+
+.formacao-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 120px;
+  align-items: start;
+}
+
+.formacao h2 {
+  font-size: 128px;
+  line-height: 0.9;
+  color: #222;
+  font-weight: 700;
+   word-break: break-all; 
+  max-width: 5ch;  
+  letter-spacing: 2px;
+}
+
+.formacao-texto p {
+  color: #ccc;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.formacao-card {
+  background-color: #0d0d0d;
+  padding: 20px 30px;
+  border-radius: 6px;
+  max-width: 500px;
+  position: relative;
+}
+
+.formacao-card::before {
+   content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;             
+  width: 4px;             
+  height: 40px;           
+  background-color: #40D240; 
+  border-radius: 2px;
+}
+
+.formacao-card .titulo {
+  color: #888;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.formacao-card h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* detalhe verde entre as cores */
+.detalhe-verde {
+  position: absolute;
+  top: 575px;
+  left: 90px;
+  width: 160px;
+  height: 130px;
+  background: url("../img/detalhe_A.svg") no-repeat center;
+  background-size: contain;
+  transform: rotate(-18deg);
+  z-index: 10;
+  opacity: 0.9;
+}

@@ -1,0 +1,75 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: start;
+  margin-top: 60px;
+}
+
+.experiencia h2 {
+  font-size: 128px;
+  color: #ddd;
+  line-height: 0.9;
+  font-weight: 700;
+  word-break: break-all; 
+  max-width: 5ch;  
+  letter-spacing: 2px;
+}
+
+
+.exp-content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #a3a3a3;
+  padding: 20px 30px;
+  border-radius: 6px;
+  gap: 20px;
+  position: relative;
+  max-width: 800px;
+  max-height: 200px;
+}
+
+.project p {
+  font-size: 20px;
+}
+
+.project::before {
+   content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;              
+  width: 4px;             
+  height: 40px;          
+  background-color: #40D240; 
+  border-radius: 2px;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.project-details h4 {
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
